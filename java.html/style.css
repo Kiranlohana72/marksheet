@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: #ddd;
+}
+#container{
+    width: 75%;
+    background: white;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border-left: 20px groove red;
+    border-right: 20px groove red;
+}
+#title{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#form-card{
+    width: 100%;
+    box-shadow: 0 0 10px 0px #ddd;
+    border-radius: 16px;
+    margin: 24px 0;
+    padding: 24px;
+}
+#marksheet-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+#horizontal{
+    display: flex;
+    gap: 24px;
+}
+#form-group{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 6px;
+
+}
+#marksheet-form label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#marksheet-form input {
+    border: 1px solid #ccc;
+    padding: 14px;
+    flex-grow: 1;
+}
+
+#add-subjects{
+    border: none;
+    background: dodgerblue;
+    color: white;
+    width: fit-content;
+    padding: 16px 24px;
+    border-radius: 4px;
+     font-size: 16px;
+}
+
+table{
+    margin-top: 32px;
+}
+th, td{
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+ #generate{
+    border: none;
+    background: deeppink;
+    color: white;
+    width: fit-content;
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: auto;
+ }
+ #dynamic-area{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+ }
+
+ #school-name{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+
+ }
+ .delete-button{
+    border: none;
+    background: deeppink;
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+ }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Marksheet Creator</h1>
+        <div id="form-card" class="animate__animated animate__fadeIn">
+            <form id="marksheet-form">
+                <div id="horizontal">
+                    <div id="form-group">
+                        <label>School logo</label>
+                        <input name="Schoollogo" type="file" accept="image/*" id="school-logo-input" />
+                    </div>
+                    <div id="form-group">
+                        <label>School Name</label>
+                        <input name="schoolName" placeholder="Khalsa Academy" type="text" id="school-name-input" />
+                    </div>
+            
+
+                    <div id="form-group">
+                        <label>Tagline</label>
+                        <input name="tagline" placeholder="A creative school" type="text" id="tagline" />
+                    </div>
+                </div>
+                <div id="horizontal">
+
+                    <div id="form-group">
+                        <label>CandidateImage</label>
+                        <input name="candidatImage" type="file" accept="image/*" id="student-pic-input" />
+                    </div>
+                    <div id="form-group">
+                        <label>Candidate's Name</label>
+                        <input name="candidateName" placeholder="Candidate's name" type="text"
+                            id="candidate-name-input" />
+                    </div>
+
+                    <div id="form-group">
+                        <label>Father's Name</label>
+                        <input name="fatherName" placeholder=" Father'sname" type="text" id="father-name-input" />
+                    </div>
+                </div>
+                <div id="horizontal">
+
+                    <div id="form-group">
+                        <label>DOB</label>
+                        <input name="dob" type="date" id="dob-input" />
+                    </div>
+                    <div id="form-group">
+                        <label>Gender</label>
+                        <select name="Gender" id="choose-gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                    </div>
+
+                    <div id="form-group">
+                        <label>Class</label>
+                        <input name="class" placeholder="6" type="number" id="class-input" />
+                    </div>
+                    <div id="form-group">
+                        <label>Roll</label>
+                        <input name="roll" placeholder="12" type="number" id="roll-input" />
+                    </div>
+                </div>
+
+                <button id="add-subjects" type="button">
+                    <i class="fa fa-plus"></i>
+                    Add Subjects
+                </button>
+                <div id="dynamic-area"></div>
+                <button id="generate" type="button">
+                    <i class="fa fa-download"></i>
+                    Generate Youe Marksheet Now
+                </button>
+            </form>
+            <div id="form-card" class="animate__animated animate__fadeIn">
+                <table width="100%">
+                    <tr>
+                        <th width="150">
+                            <img src="image/download.jpeg" width="100%" />
+                        </th>
+                        <td align="center">
+                            <h1 id="school-name">Khalsa Academy</h1>
+                            <span id="tagline-text">The Khalsa Academies Trust is a Multi Academy Trust it always seems
+                                impossible until it's done</span>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <th width="150" rowspan="4">
+                            <img src="image/download (1)111.jpeg" width="100%" id="student-pic " />
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th width="200">Student's Name</th>
+                        <td id="candidate-name">Name</td>
+                        <th width="200">Father's Name</th>
+                        <td id="father-name">Name</td>
+                    </tr>
+                    <tr>
+                        <th width="200">DOB</th>
+                        <td id="dob">00-00-0000</td>
+                        <th width="200">Gender</th>
+                        <td id="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <th width="200">Class</th>
+                        <td id="class">Javascript</td>
+                        <th width="200">Roll</th>
+                        <td id="roll">001</td>
+                    </tr>
+                </table>
+                </td>
+                </tr>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <th colspan="3">Subjects</th>
+                        <th>Full Marks</th>
+                        <th colspan="2">Obtained Marks</th>
+                    </tr>
+                   <tbody id="subject-body">
+
+                   </tbody>
+                    <tr>
+                        <th colspan="5" align="right">Total Marks</th>
+                        <td align="center" id="total-marks">0</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" align="righr">Grade</th>
+                        <td align="center" id="grade"></td>
+                        <th colspan="2" align="righr">Percentage</th>
+                        <td align="center" id="percentage">0%</td>
+                    </tr>
+
+
+                </table>         
+
+            </div>
+        </div>
+</body>
+
+</html>

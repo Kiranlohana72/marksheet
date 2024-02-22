@@ -1,0 +1,10 @@
+onchange
+----------------------------
+1.type="file"
+2.select tag
+3.type="date"
+4.type="color"
+
+
+YYYY-MM-DD
+DD-MM-YYYY
